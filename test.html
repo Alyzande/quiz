@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="quizarea">
+            <div id="title">
+                <div class="col">
+                    <h1 class="text-center">What is your learning style?</h1>
+                    <br />
+                </div>
+            </div>
+            <div id="questionarea">
+
+                <!--intro content-->
+                <div id="intro" class="justify-content-center mx-auto">
+                    <h2 class="text-center">American or British</h2>
+                    <br /><br />
+                    <p class="text-center">Alright mate! Order from McDonald's and I'll guess if you're British or American.</p><br /><br />
+                    <input type="button" value="Start Quiz" class="btn btn-success text-center" onclick="startQuiz()" />
+                </div>
+                <fieldset>
+                    <legend>Legend</legend>
+                    <input id="weekly" type="radio" name="subscription">
+                    <label for="weekly">Weekly</label>
+                    <input id="monthly" type="radio" name="subscription">
+                    <label for="monthly">Monthly</label>
+
+                </fieldset>
+                <!--Results-->
+                <div id="results" class="justify-content-center mx-auto">
+                    <h2 class="text-center">Your Learning Style Result:</h2>
+                    <br /><br />
+                    <p class="text-center" id="result"></p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- link to external JavaScript-->
+    <script src="quizCode.js" type="text/javascript"></script>
+</body>
+
+</html>
